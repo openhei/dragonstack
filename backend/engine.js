@@ -8,6 +8,7 @@ class GenerationEngine {
 
   start() {
     this.buildNewGeneration();
+
   }
 
   stop() {
@@ -17,7 +18,7 @@ class GenerationEngine {
   buildNewGeneration() {
     this.generation = new Generation();
 
-    console.log("new generation", this.generation);
+    console.log("new generation is", this.generation);
 
     this.timer = setTimeout(
       () => this.buildNewGeneration(),
